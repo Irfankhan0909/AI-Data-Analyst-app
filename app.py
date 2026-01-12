@@ -11,7 +11,7 @@ client = Groq(api_key=GROQ_API_KEY)
 
 
 # ================= PAGE =================
-st.set_page_config("Universal AI Data Analyst", "📊", layout="wide")
+st.set_page_config("AI-Driven Self-Service Business Intelligence Platform", "📊", layout="wide")
 st.title("📊 Universal AI Data Analyst")
 st.caption("Upload CSV files and ask business questions in plain English")
 
@@ -167,3 +167,4 @@ st.download_button(
 st.subheader("🤖 AI Insight")
 summary = explain(df)
 st.write(summary)
+
