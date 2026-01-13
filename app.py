@@ -6,7 +6,7 @@ from io import BytesIO
 from groq import Groq
 import os
 
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+GROQ_API_KEY = os.environ.get("GROQ")
 client = Groq(api_key=GROQ_API_KEY)
 
 
@@ -167,5 +167,6 @@ st.download_button(
 st.subheader("🤖 AI Insight")
 summary = explain(df)
 st.write(summary)
+
 
 
